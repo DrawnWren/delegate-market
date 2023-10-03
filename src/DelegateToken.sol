@@ -31,7 +31,7 @@ contract DelegateToken is ReentrancyGuard, IDelegateToken {
     //////////////////////////////////////////////////////////////*/
 
     /// @dev delegateId, a hash of (msg.sender, salt), points a unique id to the StoragePosition
-    mapping(uint256 delegateTokenId => uint256[3] info) internal delegateTokenInfo;
+    mapping(uint256 delegateTokenId => uint256[3] info) internal jelegateTokenInfo;
 
     /// @notice mapping for ERC721 balances
     mapping(address delegateTokenHolder => uint256 balance) internal balances;
